@@ -1,0 +1,1 @@
+INSERT INTO Estudiante (id, numero_lista, genero, grupo) VALUES (1, 1, 'Masculino', 'Grupo A');

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background-color: #736ced;
+  display: flex;
+  color: whitesmoke;
+  padding: 2rem 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+}
+
+
+/* Dashboard styles */
+.dashboard-content {
+  padding: 4rem;
+  background-color: #f8f8f8cf;
+  flex: 1;
+}
+
+.graph-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.graph-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.nivel-label {
+  margin-top: 1rem;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.nivel-select {
+  width: 20%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8cf;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.nivel-select:hover {
+  border-color: #888;
+}
+
+.nivel-select:focus {
+  border-color: #555;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+article{
+  margin-top: 30px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8cf;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+@media (max-width: 1000px) {
+  .graph-container {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+}
+
+.license {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #736ced;
+  color: whitesmoke;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 3rem;
+}
